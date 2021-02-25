@@ -1,1 +1,0 @@
-# React-Native-Starter-AppCenter-Pipeline
