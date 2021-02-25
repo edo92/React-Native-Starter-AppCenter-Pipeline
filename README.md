@@ -89,14 +89,14 @@ React Native Starter with Microsoft AppCenter Pipeline and Distribution.
   <tr align="center">
     <td>
       <a
-        href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md#development"
-        >   1. MacOs Environment Setup</a
+        href="https://github.com/edo92/React-Native-Starter-AppCenter-Pipeline/blob/docs/issues/issues.md"
+        >   Development issues</a
       >
     </td>
     <td>
       <a
         href="https://github.com/edo92/AWS-ECS-Hosting-Pipeline/blob/docs/issues/issues.md#production"
-        >   1. App Center Pipeline</a
+        >   Production issues</a
       >
     </td>
   </tr>
