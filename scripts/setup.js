@@ -19,4 +19,7 @@ if (process.platform === "darwin") {
   ];
 
   macEnvCmds.map((cmd) => exec(cmd));
+
+  // Install pods
+  exec("cd ios && pod install && cd ..");
 }
