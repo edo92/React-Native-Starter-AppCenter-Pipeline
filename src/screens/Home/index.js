@@ -1,5 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
+
 import { StyleSheet, Text, View, Button } from "react-native";
+
 import style from "./styles";
 import PropTypes from "prop-types";
 
@@ -15,9 +18,17 @@ const HomeScreen = ({ navigation }) => {
   );
 };
 
-const styles = StyleSheet.create(style);
+const mapStateToProps = (state) => {
+  return {};
+};
 
-export default HomeScreen;
+const mapDispatchToProsp = (dispatch) => {
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProsp)(HomeScreen);
+
+const styles = StyleSheet.create(style);
 
 HomeScreen.propTypes = {
   navigation: PropTypes.shape({
