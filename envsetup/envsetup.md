@@ -1,16 +1,15 @@
 # Setup Development Environment 
-- Setup Environemtn based on Platform
 
 <br/>
-<br/>
 
-## [MacOs Environment Setup](https://reactnative.dev/docs/environment-setup)
+### [MacOs Environment Setup](https://reactnative.dev/docs/environment-setup)
 
 - **Initial Installations**
   - `brew install node`
   - `brew install watchman`
   - `brew install --cask adoptopenjdk/openjdk/adoptopenjdk8`
   - `xcode-select --install`
+  - npm install -g react-native-cli
 
 <br/>
 
@@ -32,14 +31,16 @@
 
 - **Usage**
   - `npm run setup`
-  - `npm run dev`
+  - `npm run ios` or `npm run android`
 
 <br/>
 
-## [Windows Environment Setup](https://reactnative.dev/docs/environment-setup)
+### [Windows Environment Setup](https://reactnative.dev/docs/environment-setup)
 
 - **Open windows PowerShell and Run As admin**
   - `choco install -y nodejs.install openjdk8`
+  - npm install -g react-native-cli
 
-<br/>
-<br/>
+- **Usage**
+  - `npm run android`  
+
