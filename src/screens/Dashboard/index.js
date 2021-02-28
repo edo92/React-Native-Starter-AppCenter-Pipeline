@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import PropTypes from "prop-types";
 
 class DashboardScreen extends Component {
   render() {
@@ -9,7 +8,7 @@ class DashboardScreen extends Component {
         <Text>Dashboard Screen</Text>
         <Button
           title="Go to Dashboard"
-          onPress={() => console.log('tesitn-----')}
+          onPress={() => this.props.navigation.navigate("Home")}
         />
       </View>
     );
@@ -23,6 +22,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
 
 export default DashboardScreen;
