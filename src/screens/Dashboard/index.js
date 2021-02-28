@@ -1,18 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import PropTypes from "prop-types";
 
-const DashboardScreen = (props) => {
-  return (
-    <View style={styles.container}>
-      <Text>Dashboard Screen</Text>
-      <Button
-        title="Go to Dashboard"
-        onPress={() => props.navigation.navigate("Home")}
-      />
-    </View>
-  );
-};
+class DashboardScreen extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Dashboard Screen</Text>
+        <Button
+          title="Go to Dashboard"
+          onPress={() => this.props.navigation.navigate("Home")}
+        />
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -23,9 +24,3 @@ const styles = StyleSheet.create({
 });
 
 export default DashboardScreen;
-
-DashboardScreen.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired,
-  }).isRequired,
-};

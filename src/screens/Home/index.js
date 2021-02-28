@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { connect } from "react-redux";
 
 import { StyleSheet, Text, View, Button } from "react-native";
@@ -6,17 +6,23 @@ import { StyleSheet, Text, View, Button } from "react-native";
 import style from "./styles";
 import PropTypes from "prop-types";
 
-const HomeScreen = ({ navigation }) => {
-  return (
-    <View style={styles.container}>
-      <Text>Home Screen</Text>
-      <Button
-        title="Go to Dashboard"
-        onPress={() => navigation.navigate("Dashboard")}
-      />
-    </View>
-  );
-};
+class HomeScreen extends Component {
+  handleNavigation(to) {
+    this.props.navigation.navigate(to);
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Home Screen</Text>
+        <Button
+          title="Go to Dashboard"
+          onPress={() => this.handleNavigation("Dashboard")}
+        />
+      </View>
+    );
+  }
+}
 
 const mapStateToProps = (state) => {
   return {};
